@@ -1,7 +1,7 @@
 {
     "app-id": "com.github.marhkb.Pods",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "42",
+    "runtime-version": "43",
     "sdk": "org.gnome.Sdk",
     "command": "pods",
     "finish-args": [
@@ -31,61 +31,13 @@
     ],
     "modules": [
         {
-            "name": "libadwaita",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dtests=false",
-                "-Dexamples=false",
-                "-Dvapi=false",
-                "-Dintrospection=disabled"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "tag": "1.2.beta",
-                    "commit": "7387b453a4c93fbb60d68ec009af6f719fe8bab9"
-                }
-            ],
-            "modules": [
-                {
-                    "name": "libsass",
-                    "buildsystem": "meson",
-                    "cleanup": [
-                        "*"
-                    ],
-                    "sources": [
-                        {
-                            "type": "git",
-                            "url": "https://github.com/lazka/libsass.git",
-                            "commit": "302397c0c8ae2d7ab02f45ea461c2c3d768f248e"
-                        }
-                    ]
-                },
-                {
-                    "name": "sassc",
-                    "buildsystem": "meson",
-                    "cleanup": [
-                        "*"
-                    ],
-                    "sources": [
-                        {
-                            "type": "git",
-                            "url": "https://github.com/lazka/sassc.git",
-                            "commit": "82803377c33247265d779af034eceb5949e78354"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "name": "pods",
             "buildsystem": "meson",
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://github.com/marhkb/pods/releases/download/v1.0.0-beta.3/pods-1.0.0-beta.3.tar.xz",
-                    "sha256" : "34d10d71bf3680f8671872198cc4482fbbb20a0cadda4475b546212beadce783",
+                    "url" : "https://github.com/marhkb/pods/releases/download/v1.0.0-beta.4/pods-v1.0.0-beta.4.tar.xz",
+                    "sha256" : "9a9cd1aeb0483254d3b3ffbe97b304ddbcb65f218fc090c6d04a9da6599d38bb",
                     "strip-components": 0
                 }
             ]
