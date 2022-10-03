@@ -36,8 +36,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://github.com/marhkb/pods/releases/download/v1.0.0-beta.4/pods-v1.0.0-beta.4.tar.xz",
-                    "sha256" : "9a9cd1aeb0483254d3b3ffbe97b304ddbcb65f218fc090c6d04a9da6599d38bb",
+                    "url" : "https://github.com/marhkb/pods/releases/download/v1.0.0-beta.5/pods-v1.0.0-beta.5.tar.xz",
+                    "sha256" : "d13d1405fd80428622b1cc60f730d98b7aaf7ff15048c63c339e818847e2b838",
                     "strip-components": 0
                 }
             ]
