@@ -31,13 +31,31 @@
     ],
     "modules": [
         {
+            "name": "libpanel",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dinstall-examples=false",
+                "-Dintrospection=disabled",
+                "-Ddocs=disabled",
+                "-Dvapi=false"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/libpanel.git",
+                    "tag": "1.0.2",
+                    "commit": "57383af4bf075d290d891563a29a7482f9141026"
+                }
+            ]
+        },
+        {
             "name": "pods",
             "buildsystem": "meson",
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://github.com/marhkb/pods/releases/download/v1.0.0-beta.7/pods-v1.0.0-beta.7.tar.xz",
-                    "sha256" : "0f03f97eb2ee458ee73234733694651b475614cdf6a3c3d732a0d8a0401c9ac2",
+                    "url" : "https://github.com/marhkb/pods/releases/download/v1.0.0-beta.8/pods-v1.0.0-beta.8.tar.xz",
+                    "sha256" : "35b1d5706e696ae6864f123b426b59152e30de26c059cd3af1e24c5446ff79d7",
                     "strip-components": 0
                 }
             ]
