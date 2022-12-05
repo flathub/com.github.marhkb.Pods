@@ -49,13 +49,33 @@
             ]
         },
         {
+            "name" : "vte",
+            "config-opts" : [
+                "-Dgir=false",
+                "-Dglade=false",
+                "-Dgtk3=false",
+                "-Dgtk4=true",
+                "-D_systemd=false",
+                "-Dvapi=false"
+            ],
+            "buildsystem" : "meson",
+            "sources" : [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/vte.git",
+                    "tag": "0.70.2",
+                    "commit": "bfabb63d2f8d0f9846dc0a0a7d768d8bf6da3531"
+                }
+            ]
+        },
+        {
             "name": "pods",
             "buildsystem": "meson",
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://github.com/marhkb/pods/releases/download/v1.0.0-beta.8/pods-v1.0.0-beta.8.tar.xz",
-                    "sha256" : "35b1d5706e696ae6864f123b426b59152e30de26c059cd3af1e24c5446ff79d7",
+                    "url" : "https://github.com/marhkb/pods/releases/download/v1.0.0-beta.9/pods-v1.0.0-beta.9.tar.xz",
+                    "sha256" : "9cb2ec7c5faf15b25ea375b5b0729cf3c2b5c055d1f981e27bb43666a8ceae28",
                     "strip-components": 0
                 }
             ]
