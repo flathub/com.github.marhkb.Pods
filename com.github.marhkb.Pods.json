@@ -73,9 +73,9 @@
             "buildsystem": "meson",
             "sources" : [
                 {
-                    "type" : "archive",
-                    "url" : "https://github.com/marhkb/pods/releases/download/v1.0.0-rc.1/pods-v1.0.0-rc.1.tar.xz",
-                    "sha256" : "7cc562b439bb4c7e0ae6aa60c1dcd3aad030f6121641d81752ec6b35685e0661",
+                    "type": "archive",
+                    "url": "https://github.com/marhkb/pods/releases/download/v1.0.0-rc.2/pods-v1.0.0-rc.2.tar.xz",
+                    "sha256": "fd0aa7578c25ba4a1c6906ba215ad1cf9337f80bf7cba83751a1f282dc82155e",
                     "strip-components": 0
                 }
             ]
