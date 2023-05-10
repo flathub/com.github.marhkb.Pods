@@ -63,8 +63,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/vte.git",
-                    "tag": "0.70.4",
-                    "commit": "c851dda5b459bc1d1d186c1134c8303be6e2a9f4"
+                    "tag": "0.70.5",
+                    "commit": "84e3d29a132721f78dfe96a728db11730d7a3e21"
                 }
             ]
         },
@@ -74,8 +74,8 @@
             "sources" : [
                 {
                     "type": "archive",
-                    "url": "https://github.com/marhkb/pods/releases/download/v1.1.1/pods-v1.1.1.tar.xz",
-                    "sha256": "7a981db5413738852623c1851b2696e74ed859e42a989e19be3bcf8169ef4f53",
+                    "url": "https://github.com/marhkb/pods/releases/download/v1.1.2/pods-v1.1.2.tar.xz",
+                    "sha256": "940d12ea2a4a30d0daddcf31f2cf7583845ded3e46b3db69dde1e79f1a0740ef",
                     "strip-components": 0
                 }
             ]
