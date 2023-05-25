@@ -37,7 +37,8 @@
                 "-Dinstall-examples=false",
                 "-Dintrospection=disabled",
                 "-Ddocs=disabled",
-                "-Dvapi=false"
+                "-Dvapi=false",
+                "-Dbuildtype=release"
             ],
             "sources": [
                 {
@@ -50,15 +51,16 @@
         },
         {
             "name" : "vte",
+            "buildsystem" : "meson",
             "config-opts" : [
                 "-Dgir=false",
                 "-Dglade=false",
                 "-Dgtk3=false",
                 "-Dgtk4=true",
                 "-D_systemd=false",
-                "-Dvapi=false"
+                "-Dvapi=false",
+                "-Dbuildtype=release"
             ],
-            "buildsystem" : "meson",
             "sources" : [
                 {
                     "type": "git",
@@ -71,11 +73,14 @@
         {
             "name": "pods",
             "buildsystem": "meson",
+            "config-opts": [
+                "-Dbuildtype=release"
+            ],
             "sources" : [
                 {
                     "type": "archive",
-                    "url": "https://github.com/marhkb/pods/releases/download/v1.1.3/pods-v1.1.3.tar.xz",
-                    "sha256": "45911714417f39cc390ffb314c6c3299f449b1bee36d806525d7412d82676bea",
+                    "url": "https://github.com/marhkb/pods/releases/download/v1.2.0/pods-v1.2.0.tar.xz",
+                    "sha256": "fe8b8dfba336bb306d60d355a5ff6d9a8e1acdc23e27b44c64a60e779cd7ada7",
                     "strip-components": 0
                 }
             ]
