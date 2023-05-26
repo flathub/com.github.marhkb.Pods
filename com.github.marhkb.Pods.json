@@ -61,6 +61,9 @@
                 "-Dvapi=false",
                 "-Dbuildtype=release"
             ],
+            "cleanup": [
+                "/bin/vte-*"
+            ],
             "sources" : [
                 {
                     "type": "git",
@@ -79,8 +82,8 @@
             "sources" : [
                 {
                     "type": "archive",
-                    "url": "https://github.com/marhkb/pods/releases/download/v1.2.0/pods-v1.2.0.tar.xz",
-                    "sha256": "fe8b8dfba336bb306d60d355a5ff6d9a8e1acdc23e27b44c64a60e779cd7ada7",
+                    "url": "https://github.com/marhkb/pods/releases/download/v1.2.1/pods-v1.2.1.tar.xz",
+                    "sha256": "2a4b9d88d778b6422f9e7f6abac6b745d2c323cfd064ced4070ab8e34fb5a28a",
                     "strip-components": 0
                 }
             ]
