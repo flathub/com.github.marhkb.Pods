@@ -82,8 +82,8 @@
             "sources" : [
                 {
                     "type": "archive",
-                    "url": "https://github.com/marhkb/pods/releases/download/v1.2.2/pods-v1.2.2.tar.xz",
-                    "sha256": "a3c9914df24e07a7a17e222e95407eea56faa2318a900f1771b7add538c7ff26",
+                    "url": "https://github.com/marhkb/pods/releases/download/v1.2.3/pods-v1.2.3.tar.xz",
+                    "sha256": "fd39cf34dff42038178192a49ca9197618d90e0e11682b5449d5c5bc525372ae",
                     "strip-components": 0
                 }
             ]
