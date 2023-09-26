@@ -1,7 +1,7 @@
 {
     "id": "com.github.marhkb.Pods",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "43",
+    "runtime-version": "44",
     "sdk": "org.gnome.Sdk",
     "command": "pods",
     "finish-args": [
@@ -37,28 +37,33 @@
                 "-Dinstall-examples=false",
                 "-Dintrospection=disabled",
                 "-Ddocs=disabled",
-                "-Dvapi=false"
+                "-Dvapi=false",
+                "-Dbuildtype=release"
             ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/libpanel.git",
-                    "tag": "1.0.2",
-                    "commit": "57383af4bf075d290d891563a29a7482f9141026"
+                    "tag": "1.2.0",
+                    "commit": "2757c49ed68507f38f14aca244eef5ec90ae00ee"
                 }
             ]
         },
         {
             "name" : "vte",
+            "buildsystem" : "meson",
             "config-opts" : [
                 "-Dgir=false",
                 "-Dglade=false",
                 "-Dgtk3=false",
                 "-Dgtk4=true",
                 "-D_systemd=false",
-                "-Dvapi=false"
+                "-Dvapi=false",
+                "-Dbuildtype=release"
             ],
-            "buildsystem" : "meson",
+            "cleanup": [
+                "/bin/vte-*"
+            ],
             "sources" : [
                 {
                     "type": "git",
@@ -71,11 +76,14 @@
         {
             "name": "pods",
             "buildsystem": "meson",
+            "config-opts": [
+                "-Dbuildtype=release"
+            ],
             "sources" : [
                 {
                     "type": "archive",
-                    "url": "https://github.com/marhkb/pods/releases/download/v1.1.0-beta.4/pods-v1.1.0-beta.4.tar.xz",
-                    "sha256": "006e821bba65ba9348c9fc641d673215514f0d2cfa2c5d40fa570ebba7cc12fa",
+                    "url": "https://github.com/marhkb/pods/releases/download/v1.2.3/pods-v1.2.3.tar.xz",
+                    "sha256": "fd39cf34dff42038178192a49ca9197618d90e0e11682b5449d5c5bc525372ae",
                     "strip-components": 0
                 }
             ]
