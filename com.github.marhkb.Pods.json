@@ -1,7 +1,7 @@
 {
     "id": "com.github.marhkb.Pods",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "44",
+    "runtime-version": "45",
     "sdk": "org.gnome.Sdk",
     "command": "pods",
     "finish-args": [
@@ -44,8 +44,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/libpanel.git",
-                    "tag": "1.2.0",
-                    "commit": "2757c49ed68507f38f14aca244eef5ec90ae00ee"
+                    "tag": "1.4.0",
+                    "commit": "3719f5d044d0ba068b525d14f8366d7e43297c89"
                 }
             ]
         },
@@ -68,8 +68,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/vte.git",
-                    "tag": "0.72.2",
-                    "commit": "854e56263454077ab009aaff67f1afe0dbd52878"
+                    "tag": "0.74.1",
+                    "commit": "eee37c871173d04387cd0004dde7f8676f390f62"
                 }
             ]
         },
@@ -82,8 +82,8 @@
             "sources" : [
                 {
                     "type": "archive",
-                    "url": "https://github.com/marhkb/pods/releases/download/v1.2.3/pods-v1.2.3.tar.xz",
-                    "sha256": "fd39cf34dff42038178192a49ca9197618d90e0e11682b5449d5c5bc525372ae",
+                    "url": "https://github.com/marhkb/pods/releases/download/v2.0.0/pods-v2.0.0.tar.xz",
+                    "sha256": "6aabfbd6d6c71fa9b1427f95ca8bdf15caa7d652abe5504e3ac9ff17230f7205",
                     "strip-components": 0
                 }
             ]
