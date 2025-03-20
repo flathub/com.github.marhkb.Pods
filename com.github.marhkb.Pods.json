@@ -1,7 +1,7 @@
 {
     "id": "com.github.marhkb.Pods",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "47",
+    "runtime-version": "48",
     "sdk": "org.gnome.Sdk",
     "command": "pods",
     "finish-args": [
@@ -49,8 +49,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/vte.git",
-                    "tag": "0.78.0",
-                    "commit": "00c99e846bf83536f978b4fe5dc2c8a6983b8a94"
+                    "tag": "0.78.4",
+                    "commit": "0fb946dd96b2c30195f4fa2d63bcfa741cac38a3"
                 }
             ]
         },
@@ -63,8 +63,8 @@
             "sources" : [
                 {
                     "type": "archive",
-                    "url": "https://github.com/marhkb/pods/releases/download/v2.1.2/pods-v2.1.2.tar.xz",
-                    "sha256": "259fe1830e1efcde5bea5afabd234907361ef6727c0b29c4f289427b1f1e5360",
+                    "url": "https://github.com/marhkb/pods/releases/download/v2.2.0/pods-v2.2.0.tar.xz",
+                    "sha256": "c54b7ea13645714bd9f247d3330708046864739fcb1d27270fa0d5997d55e0b9",
                     "strip-components": 0
                 }
             ]
