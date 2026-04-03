@@ -21,12 +21,9 @@
   },
   "cleanup": [
     "/include",
+    "/lib/cmake",
     "/lib/pkgconfig",
-    "/man",
-    "/share/doc",
-    "/share/gtk-doc",
-    "/share/man",
-    "/share/pkgconfig",
+    "/share/cmake",
     "*.la",
     "*.a"
   ],
