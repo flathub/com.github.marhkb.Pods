@@ -14,7 +14,8 @@
     "--env=G_MESSAGES_DEBUG=none",
     "--env=RUST_BACKTRACE=1",
     "--filesystem=/run/systemd/journal",
-    "--filesystem=xdg-run/podman:ro"
+    "--filesystem=xdg-run/podman:ro",
+    "--filesystem=/run/docker.sock"
   ],
   "build-options": {
     "append-path": "/usr/lib/sdk/rust-stable/bin"
@@ -93,8 +94,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/marhkb/pods/releases/download/v2.4.0/pods-v2.4.0.tar.xz",
-          "sha256": "05d64e8af8de2332404edb7f6a8461f773e7a42f21acfe17b6a79e5da96c5531",
+          "url": "https://github.com/marhkb/pods/releases/download/v3.0.0/pods-v3.0.0.tar.xz",
+          "sha256": "473e6675d8389e92acd0d61283c52de8f61de67a8cb728514b780161126485d3",
           "strip-components": 0
         }
       ]
