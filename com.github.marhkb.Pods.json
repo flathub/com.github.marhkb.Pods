@@ -1,110 +1,104 @@
 {
-    "id": "com.github.marhkb.Pods",
-    "runtime": "org.gnome.Platform",
-    "runtime-version": "50",
-    "sdk": "org.gnome.Sdk",
-    "sdk-extensions": [
-        "org.freedesktop.Sdk.Extension.rust-stable"
-    ],
-    "command": "pods",
-    "finish-args": [
-        "--socket=fallback-x11",
-        "--socket=wayland",
-        "--share=network",
-        "--share=ipc",
-        "--device=dri",
-        "--env=G_MESSAGES_DEBUG=none",
-        "--env=RUST_BACKTRACE=1",
-        "--filesystem=/run/systemd/journal",
-        "--filesystem=xdg-run/podman:ro",
-        "--filesystem=/run/docker.sock"
-    ],
-    "build-options": {
-        "append-path": "/usr/lib/sdk/rust-stable/bin"
-    },
-    "cleanup": [
-        "/include",
-        "/lib/cmake",
-        "/lib/pkgconfig",
-        "/share/cmake",
-        "*.la",
-        "*.a"
-    ],
-    "modules": [
+  "id": "com.github.marhkb.Pods",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "50",
+  "sdk": "org.gnome.Sdk",
+  "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
+  "command": "pods",
+  "finish-args": [
+    "--socket=fallback-x11",
+    "--socket=wayland",
+    "--share=network",
+    "--share=ipc",
+    "--device=dri",
+    "--env=G_MESSAGES_DEBUG=none",
+    "--env=RUST_BACKTRACE=1",
+    "--filesystem=/run/systemd/journal",
+    "--filesystem=xdg-run/podman:ro",
+    "--filesystem=/run/docker.sock"
+  ],
+  "build-options": {
+    "append-path": "/usr/lib/sdk/rust-stable/bin"
+  },
+  "cleanup": [
+    "/include",
+    "/lib/cmake",
+    "/lib/pkgconfig",
+    "/share/cmake",
+    "*.la",
+    "*.a"
+  ],
+  "modules": [
+    {
+      "name": "fast_float",
+      "buildsystem": "cmake-ninja",
+      "sources": [
         {
-            "name": "fast_float",
-            "buildsystem": "cmake-ninja",
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/fastfloat/fast_float.git",
-                    "tag": "v8.2.10",
-                    "commit": "34164f547b7df3f5d794ff67e9f885c36819ebfc",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 214353,
-                        "tag-template": "v$version"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "simdutf",
-            "buildsystem": "cmake-ninja",
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/simdutf/simdutf.git",
-                    "tag": "v9.0.0",
-                    "commit": "ca7acbcea967b5dcbab490066e99e3a6e6925539",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 378662,
-                        "tag-template": "v$version"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "vte",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dapp=false",
-                "-Ddocs=false",
-                "-Dgir=false",
-                "-Dglade=false",
-                "-Dgtk3=false",
-                "-Dgtk4=true",
-                "-D_systemd=false",
-                "-Dvapi=false",
-                "-Dbuildtype=release"
-            ],
-            "cleanup": [
-                "/bin/vte-*"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/vte.git",
-                    "tag": "0.84.0",
-                    "commit": "5da1ed34b210f2b000ef954c147f9a1391da363b"
-                }
-            ]
-        },
-        {
-            "name": "pods",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dbuildtype=release"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/marhkb/pods/releases/download/v3.0.0/pods-v3.0.0.tar.xz",
-                    "sha256": "473e6675d8389e92acd0d61283c52de8f61de67a8cb728514b780161126485d3",
-                    "strip-components": 0
-                }
-            ]
+          "type": "git",
+          "url": "https://github.com/fastfloat/fast_float.git",
+          "tag": "v8.2.10",
+          "commit": "34164f547b7df3f5d794ff67e9f885c36819ebfc",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 214353,
+            "tag-template": "v$version"
+          }
         }
-    ]
+      ]
+    },
+    {
+      "name": "simdutf",
+      "buildsystem": "cmake-ninja",
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/simdutf/simdutf.git",
+          "tag": "v9.0.0",
+          "commit": "ca7acbcea967b5dcbab490066e99e3a6e6925539",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 378662,
+            "tag-template": "v$version"
+          }
+        }
+      ]
+    },
+    {
+      "name": "vte",
+      "buildsystem": "meson",
+      "config-opts": [
+        "-Dapp=false",
+        "-Ddocs=false",
+        "-Dgir=false",
+        "-Dglade=false",
+        "-Dgtk3=false",
+        "-Dgtk4=true",
+        "-D_systemd=false",
+        "-Dvapi=false",
+        "-Dbuildtype=release"
+      ],
+      "cleanup": ["/bin/vte-*"],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://gitlab.gnome.org/GNOME/vte.git",
+          "tag": "0.84.0",
+          "commit": "5da1ed34b210f2b000ef954c147f9a1391da363b"
+        }
+      ]
+    },
+    {
+      "name": "pods",
+      "buildsystem": "meson",
+      "config-opts": ["-Dbuildtype=release"],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/marhkb/pods/releases/download/v3.1.0/pods-v3.1.0.tar.xz",
+          "sha256": "ed47f80583ab309f7af065c244a1cea015b6df5e6b11465493311928de076006",
+          "strip-components": 0
+        }
+      ]
+    }
+  ]
 }
