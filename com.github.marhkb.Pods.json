@@ -3,7 +3,9 @@
   "runtime": "org.gnome.Platform",
   "runtime-version": "50",
   "sdk": "org.gnome.Sdk",
-  "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
+  "sdk-extensions": [
+    "org.freedesktop.Sdk.Extension.rust-stable"
+  ],
   "command": "pods",
   "finish-args": [
     "--socket=fallback-x11",
@@ -53,8 +55,8 @@
         {
           "type": "git",
           "url": "https://github.com/simdutf/simdutf.git",
-          "tag": "v9.0.0",
-          "commit": "ca7acbcea967b5dcbab490066e99e3a6e6925539",
+          "tag": "v9.1.0",
+          "commit": "2d4e249dcfd978b39dd567b156f20a43db97377b",
           "x-checker-data": {
             "type": "anitya",
             "project-id": 378662,
@@ -77,7 +79,9 @@
         "-Dvapi=false",
         "-Dbuildtype=release"
       ],
-      "cleanup": ["/bin/vte-*"],
+      "cleanup": [
+        "/bin/vte-*"
+      ],
       "sources": [
         {
           "type": "git",
@@ -90,7 +94,9 @@
     {
       "name": "pods",
       "buildsystem": "meson",
-      "config-opts": ["-Dbuildtype=release"],
+      "config-opts": [
+        "-Dbuildtype=release"
+      ],
       "sources": [
         {
           "type": "archive",
