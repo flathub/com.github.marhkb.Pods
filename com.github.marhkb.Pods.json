@@ -38,8 +38,8 @@
         {
           "type": "git",
           "url": "https://github.com/fastfloat/fast_float.git",
-          "tag": "v8.2.10",
-          "commit": "34164f547b7df3f5d794ff67e9f885c36819ebfc",
+          "tag": "v8.3.0",
+          "commit": "b0ab987b3dfdde13fa1915f65ef2a5c068d9208c",
           "x-checker-data": {
             "type": "anitya",
             "project-id": 214353,
@@ -55,8 +55,8 @@
         {
           "type": "git",
           "url": "https://github.com/simdutf/simdutf.git",
-          "tag": "v9.1.1",
-          "commit": "9dd35adc5f2c87a53c5a0e6e5b43af6fffe7187e",
+          "tag": "v9.1.2",
+          "commit": "be33cbe34b2d222566fd88f1084f86771ed8ae4a",
           "x-checker-data": {
             "type": "anitya",
             "project-id": 378662,
