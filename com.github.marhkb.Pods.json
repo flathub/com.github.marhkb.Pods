@@ -1,7 +1,7 @@
 {
   "id": "com.github.marhkb.Pods",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "50",
+  "runtime-version": "51",
   "sdk": "org.gnome.Sdk",
   "sdk-extensions": [
     "org.freedesktop.Sdk.Extension.rust-stable"
@@ -100,8 +100,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/marhkb/pods/releases/download/v3.1.1/pods-v3.1.1.tar.xz",
-          "sha256": "e13a8a36f8beac8f5194b297abdef2ac4424f4c49117f83a2afb735e15c6e48b",
+          "url": "https://github.com/marhkb/pods/releases/download/v3.2.0/pods-v3.2.0.tar.xz",
+          "sha256": "16b2f4e7c7145570dcdf4ea357638fcd32f0e90c8ff58c3263883c2e8d83c481",
           "strip-components": 0
         }
       ]
